@@ -6,7 +6,7 @@ continueYN = "y"
  
 while continueYN == "y":
    #...get temperature input from the user
-   sDegreeF = input("Enter next temperature in degrees Fahrenheit (F):";)
+   sDegreeF = input("Enter next temperature in degrees Fahrenheit (F):")
  
    #...convert text entry to number value that can be used in equations
    nDegreeF = int(sDegreeF)
@@ -17,11 +17,11 @@ while continueYN == "y":
    print ("Temperature in degrees C is:", nDegreeC)
  
    #...check for temperature below freezing..
-   if nDegreeC < 0:
+   if nDegreeF < 32:
       print ("Pack long underwear!")
  
    #...check for it being a hot day...
-   if nDegreeF > 100:
+   if nDegreeF > 85:
       print ("Remember to hydrate!")
  
    continueYN = input("Input another?")
